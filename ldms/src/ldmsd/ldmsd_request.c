@@ -591,7 +591,7 @@ static struct request_handler_entry request_handler[] = {
 
 	/* STREAM */
 	[LDMSD_STREAM_PUBLISH_REQ] = {
-		LDMSD_STREAM_PUBLISH_REQ, stream_publish_handler, XALL
+		LDMSD_STREAM_PUBLISH_REQ, stream_publish_handler, XALL | MOD
 	},
 	[LDMSD_STREAM_SUBSCRIBE_REQ] = {
 		LDMSD_STREAM_SUBSCRIBE_REQ, stream_subscribe_handler, XUG | MOD

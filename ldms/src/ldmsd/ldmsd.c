@@ -243,6 +243,16 @@ int ldmsd_cfg_cntr_get()
 	return cfg_cntr;
 }
 
+void ldmsd_inc_cfg_cntr()
+{
+	__atomic_fetch_add(&cfg_cntr, 1, __ATOMIC_SEQ_CST);
+}
+
+int ldmsd_cfg_cntr_get()
+{
+	return cfg_cntr;
+}
+
 const char *ldmsd_myname_get()
 {
 	return myname;
