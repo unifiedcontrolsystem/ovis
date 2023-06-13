@@ -81,7 +81,7 @@ const metric_t metricsDefinitions[] = {
         {.name = "perf_level", .type = LDMS_V_D64, .pf = (funcPtr_t) getPerfLevel},
         {.name = "power_usage", .type = LDMS_V_S32, .pf = (funcPtr_t) getPowerUsage},
 //        {.name = "power_cap", .type = LDMS_V_S32, .pf = (funcPtr_t) getPowerCap},    // no longer supported
-        {.name = "gpu_temp", .type = LDMS_V_D64, .pf = (funcPtr_t) getGpuTemp},
+        {.name = "gpu_temp", .type = LDMS_V_D64, .pf = (funcPtr_t) getGpuTemp}
 //        {.name = "pci_max_bandwidth", .type = LDMS_V_U64, .pf = (funcPtr_t) getPciMaxSpeed}    // currently OneAPI does not support this
 };
 
